@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<a href="javascript:void(0)" class="icon_toggle">
+		<span></span>
+	</a>
+
+	<nav class='nav_hide'>
+		<div class="menu_box">
+			<ul>
+				<li><a href="javascript:void(0)">Home</a></li>
+				<li><a href="javascript:void(0)">About</a></li>
+				<li><a href="javascript:void(0)">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<!-- JS -->
+	<script type='text/javascript' src='js/jquery-1.12.0.min.js'></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$(".icon_toggle").click(function(){
+				$(this).toggleClass('active');
+				$('nav').fadeToggle();
+			});
+		});
+	</script>
+</body>
+</html>
